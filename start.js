@@ -1,7 +1,6 @@
 var http = require('http');
 
 var router = require('./router.js');
-var routes = require('./routes.js');
+var controllers = require('./Controllers/controllers.js');
 
-console.log(routes);
-//http.createServer(router(routes)).listen(80);
+http.createServer(router(controllers)).listen(80);
